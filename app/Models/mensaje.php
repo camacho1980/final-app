@@ -11,3 +11,4 @@ class mensaje extends Model
 protected $fillable = ['name','email','phone','message'];
 
 }
+

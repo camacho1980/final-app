@@ -9,4 +9,4 @@ use App\Http\Controllers\PageController;
 
 
 //CREAMOS LA RUTA API
-Route::post('/contacto',[PageController::class,'storeApiMensaje'])->name('api.mensaje.store');
+Route::post('/contacto',[PageController::class,'apiMensaje'])->name('api.mensaje');

@@ -11,8 +11,9 @@ use App\Mail\MensajeContacto;
 
 class PageController extends Controller
 {
-    public function storeApiMensaje(){
+    public function apiMensaje(){
           // paso 1 valido los datos
+
           $validator = Validator::make(request()->all(), [
             'name'=>'required | min:3',
             'email'=>'required',
@@ -28,9 +29,10 @@ class PageController extends Controller
             ],422);
         };
 
-        // dd(request()->all()); // para probar si estoy enviando bien los datos
-        
-// validador datos requeridos
+        // dd(request()->all());
+
+        // validador datos requeridos
+
         $mensaje = Mensaje::create([
             'name'=>request()->name,
             'email'=>request()->email,
@@ -42,7 +44,8 @@ class PageController extends Controller
 
         Mail::to('jorgearguello@live.com.ar')->send(new MensajeContacto($mensaje));
         
-//RESPONDEMOS UN JSON
+        //RESPONDEMOS UN JSON
+        
         return response([
             "meta" => [
                 "mensaje" => "Gracias por su mensaje le responderemos a la brevedad",
