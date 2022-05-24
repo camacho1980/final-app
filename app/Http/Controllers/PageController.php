@@ -15,9 +15,9 @@ class PageController extends Controller
           // paso 1 valido los datos
 
           $validator = Validator::make(request()->all(), [
-            'name'=>'required | min:3',
+            'name'=>'required | min:4',
             'email'=>'required',
-            'phone'=>'required | min:1',
+            'phone'=>'required | min:5',
             'message'=>'required'  
         ]);
         // paso 2 respondo si hay errores

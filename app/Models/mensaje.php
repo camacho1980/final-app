@@ -12,3 +12,4 @@ protected $fillable = ['name','email','phone','message'];
 
 }
 
+// permiten protegerse en caso de que un usuario 'malicioso' haya modificado los campos del formulario para incluir campos que existían.
