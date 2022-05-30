@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Mensaje;
 use Illuminate\Http\Request;
 use App\Mail\MensajeContacto;
-use Illuminate\support\Facades\Mail;
+use Illuminate\Support\Facades\Mail;
 use Validator;
 
 class PageController extends Controller
