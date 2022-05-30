@@ -9,6 +9,8 @@ use App\Models\Mensaje;
 // use Illuminate\support\Facades\Mail;
 
 use App\Mail\MensajeContacto;
+use App\Controllers\Controller;
+
 
 class PageController extends Controller
 {
