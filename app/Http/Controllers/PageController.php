@@ -1,11 +1,13 @@
 <?php
+
+
 namespace App\Http\Controllers;
+use Validator;
 
 use App\Models\Mensaje;
 use Illuminate\Http\Request;
+use Illuminate\support\Facades\Mail;
 use App\Mail\MensajeContacto;
-use Illuminate\Support\Facades\Mail;
-use Validator;
 
 class PageController extends Controller
 {
