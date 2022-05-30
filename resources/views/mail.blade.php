@@ -14,5 +14,4 @@ Su mensaje es:
 
 Gracias,<br>
 
-    
 @endcomponent
