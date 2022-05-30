@@ -6,7 +6,8 @@ use Validator;
 
 use App\Models\Mensaje;
 use Illuminate\Http\Request;
-use Illuminate\support\Facades\Mail;
+// use Illuminate\support\Facades\Mail;
+
 use App\Mail\MensajeContacto;
 
 class PageController extends Controller
