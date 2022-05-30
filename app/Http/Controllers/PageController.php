@@ -3,13 +3,11 @@
 
 // namespace App\Http\Controllers;
 use Validator;
-
 use App\Models\Mensaje;
 // use Illuminate\Http\Request;
 // use Illuminate\support\Facades\Mail;
 
 use App\Mail\MensajeContacto;
-use App\Controllers\Controller;
 
 
 class PageController extends Controller
